@@ -1,0 +1,22 @@
+try:
+    while True:
+        x = float(input("Enter a valid number: "))
+        y = float(input("Enter a second valid number: "))
+        a = input("Which operation would you like (/,*,+,**,-): ")
+        if a=='/':
+            if y==0:
+                print("Please enter a number other than 0 for the denominator")
+            else:
+                print("The division the two numbers is: ", x/y)
+        elif a=='*':
+            print("The product of the two numbers is: ", x*y)
+        elif a=='+':
+            print("The sum of the two numbers is: ", x+y)
+        elif a=='**':
+            print("The number powered to the other number is; ", x**y)
+        elif a=='-':
+            print("The difference of the two numbers is: ", x-y)
+        else:
+            print("Please enter a valid operation")
+except ValueError:
+    print("Please enter a valid number")
